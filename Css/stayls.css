@@ -1,0 +1,574 @@
+@font-face {
+    font-family: "IRANSans";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Css/fonts/IRANSans\(FaNum\).ttf');
+    src:  /* IE6-8 */ url('../Css/fonts/IRANSans(FaNum)_Light.ttf')
+            format('truetype'),
+        /* FF39+,Chrome36+, Opera24+*/
+            url('../Css/fonts/IRANSans(FaNum)_Medium.ttf') format('truetype'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+            url('../Css/fonts/IRANSans(FaNum)_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Yekan";
+    src: url("../Css/fonts/iran-yekan-400.eot");
+    src: url("../Css/fonts/iran-yekan-400.eot?#iefix") format("embedded-opentype"),
+     url("../Css/fonts/iran-yekan-400.woff2") format("woff2"),
+      url("../Css/fonts/iran-yekan-400.woff") format("woff"), 
+      url("../Css/fonts/iran-yekan-400.ttf") format("truetype");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+select,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+body {
+    width: 100%;
+    direction: rtl;
+    font-family: "Yekan";
+    background-color: #e9e9e9;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    text-align: right;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+img {
+    border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.iran{
+    font-family: "IRANSans";
+}
+
+.yekan{
+    font-family: "Yekan";
+}
+
+:root{
+    --bg1: #322a59;
+    --bg11: #322a59a2;
+    --bg12: #322a5927;
+    --bg2: #ebc20f;
+    --bg21: #e9c31862;
+    --bg22: #e9c3182a;
+    --bg3: #592256;
+    --bg31: #5922512c;
+    --cl4: #dfdfdf;
+    --cl40: #bdbdbd;
+    --cl41: #696969;
+    --cl5: #3a3a3a;
+    --cl6: #1d1d1d;
+}
+
+.over-h{
+    overflow: hidden;
+}
+
+/* /////////////////////////        start    background          /////////////////////// */
+
+.back1{
+    background-color: var(--bg1);
+}
+.back11{
+    background-color: var(--bg11);
+}
+.back12{
+    background-color: var(--bg12);
+}
+.back2{
+    background-color: var(--bg2);
+}
+.back21{
+    background-color: var(--bg21);
+}
+.back3{
+    background-color: var(--bg3);
+}
+.back31{
+    background-color: var(--bg31);
+}
+.back41{
+    background-color: var(--cl41);
+}
+
+.back-primery{
+    background-color: #cccccc;
+}
+ .back-white{
+    background-color: white;
+ }
+
+ .back-grad{
+    background-image: linear-gradient(45deg, var(--bg11), var(--bg21));
+ }
+/* /////////////////////////        end    background          /////////////////////// */
+/* /////////////////////////        start    color          /////////////////////// */
+
+.color1{
+    color: var(--bg1);
+}
+.color2{
+    color: var(--bg2);
+}
+.color3{
+    color: var(--bg3);
+}
+
+.color4{
+    color: var(--cl4);
+}
+.color41{
+    color: var(--cl41);
+}
+.color5{
+    color: var(--cl5);
+}
+.color6{
+    color: var(--cl6);
+}
+
+/* /////////////////////////        ed    color          /////////////////////// */
+
+/* ////////////////////////       start     width height         /////////////////////////// */
+.w-max{
+    width: max-content;
+}
+.w-full{
+    width: 100%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.w-20{
+    width: 20px;
+}
+.w-30{
+    width: 30px;
+}
+
+.w-40{
+    width: 40px;
+}
+
+.w-200{
+    width: 200px;
+}
+
+.w-250{
+    width: 250px;
+}
+
+.h-max {
+height: max-content;
+}
+.h-full{
+    height: 100%;
+}
+.h-20{
+    height: 20px;
+}
+.h-30{
+    height: 30px;
+}
+.h-40{
+    height: 40px;
+}
+.h-60{
+    height: 60px;
+}
+.h-80{
+    height: 80px;
+}
+.h-200{
+    height: 200px;
+}
+.h-240{
+    height: 240px;
+}
+.h-300{
+    height: 300px;
+}
+.h-350{
+    height: 22rem;
+}
+
+.h-400{
+    height: 400px;
+}
+.h-800{
+    height: 43rem;
+}
+/* ////////////////////////        end    width height         /////////////////////////// */
+
+/* /////////////////////////        start    position          /////////////////////// */
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.trx-50{
+    transform: translateX(-50%);
+}
+.try-50{
+    transform: translateY(-50%);
+}
+
+.top-50{
+    top: 50%;
+}
+.top-10{
+    top: 10px;
+}
+.botton-10{
+    bottom: 10px;
+}
+.botton-20{
+    bottom: 20px;
+}
+
+.left-0{
+    left: 0;
+}
+.left-10{
+    left: 10px;
+}
+.right-10{
+    right: 10px;
+}
+
+.z-1{
+    z-index: -1;
+}
+
+.z-10{
+    z-index: 10;
+}
+/* ////////////////////////        end    position         /////////////////////////// */
+
+
+/* /////////////////////////        start    display          /////////////////////// */
+
+.flex{
+    display: flex;
+}
+.grid{
+    
+    display: grid;
+}
+.col{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+.gap-30{
+    gap: 30px;
+}
+.gap-40{
+    gap: 40px;
+}
+.gap-50{
+    gap: 50px;
+}
+/* /////////////////////////        end    display          /////////////////////// */
+
+
+/* /////////////////////////        start    margin          /////////////////////// */
+
+.mrx-auto{
+    margin: 0 auto;
+}
+
+.mrx-10{
+    margin: 0 10px;
+}
+.mrx-20{
+    margin: 0 20px;
+}
+.mrx-30{
+    margin: 0 30px;
+}
+.mrx-40{
+    margin: 0 40px;
+}
+.mry-10{
+    margin:10px 0 ;
+}
+.mry-20{
+    margin: 20px 0;
+}
+.mry-30{
+    margin: 30px 0;
+}
+.mry-40{
+    margin: 40px 0;
+}
+.mry-50{
+    margin: 50px 0;
+}
+/* /////////////////////////        end    margin          /////////////////////// */
+
+/* /////////////////////////        start    padding          /////////////////////// */
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+.px-5{
+    padding: 0 5px;
+}
+
+.px-10{
+    padding: 0 10px;
+}
+.py-5{
+    padding:5px 0 ;
+}
+
+.py-10{
+    padding:10px 0 ;
+}
+
+/* /////////////////////////        end    padding          /////////////////////// */
+
+
+
+/* /////////////////////////        start    font          /////////////////////// */
+
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-25{
+    font-size: 25px;
+}
+.font-30{
+    font-size: 30px;
+}
+/* /////////////////////////        end    font          /////////////////////// */
+
+/* /////////////////////////        start    border          /////////////////////// */
+.bor-1{
+    border: 1px solid var(--cl40);
+}
+.bor-b-1{
+    border-bottom: 1px solid var(--bg21)
+}
+
+
+.borx-1{
+    border-left: 1px solid var(--cl40);
+    border-right: 1px solid var(--cl40);
+}
+.radius-50{
+    border-radius: 50%;
+}
+/* /////////////////////////        end    border          /////////////////////// */
+/* /////////////////////////        start    opacity          /////////////////////// */
+
+.opacity40{
+    opacity: 0.4;
+}
+
+.opacity40{
+    opacity: 0.4;
+}
+
+.opacity60{
+    opacity: 0.6;
+}
+
+.opacity80{
+    opacity: 0.8;
+}
+
+/* /////////////////////////        end    opacity          /////////////////////// */
+
+/* /////////////////////////        start    boxshadow          /////////////////////// */
+.shadow1{
+    box-shadow: 1px 3px 5px var(--cl6);
+}
+/* /////////////////////////        end    boxshadow          /////////////////////// */
+

@@ -1,0 +1,83 @@
+.blur1{
+    background: #11111146;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.blur2{
+    background: var(--bg22);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.headers{
+    background: url(../img/std.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.scroll-clubs{
+    border-top: 2px solid var(--bg1);
+    border-bottom: 2px solid var(--bg1);
+}
+
+.click-right:hover, .click-left:hover{
+    background-color: var(--bg2);
+    color: var(--cl4);
+    transition: all 0.4s;
+}
+.cont-label-r{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.bor1,.bor2,.bor3{
+    background-color: var(--bg2);
+    height: 2px;
+}
+.bor1{
+    width: 40px;
+}
+.bor2{
+    width: 30px;
+
+}
+.bor3{
+    width: 20px;
+
+}
+
+.back-img{
+    background-image: url(../img/back-clubs.jpg);
+}
+.back-clubs-home{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: #7a797918;
+    
+}
+
+.label-city{
+    top: 10px;
+}
+
+.grid-container {
+    grid-template-columns: auto auto auto auto;
+}
+.btn{
+    background-color: var(--bg1);
+    padding: 5px 8px;
+}
+.linear-grad-1{
+    background-image: linear-gradient( #11111100,#000000);
+    z-index: 10;
+}
+.hover1:hover{
+    opacity: 0.9;
+    transition: all 0.4s;
+    transform: scale(1.1);
+}
